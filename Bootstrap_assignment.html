@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mihika Resume</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .resume-title {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            font-weight: bold;
+            color: #333;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 50px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 15px;
+            text-align: left;
+        }
+        th {
+            background-color: #7CB9E8;
+            color: #fff;
+        }
+        img {
+            height: 75px;
+            width: 75px;
+            border-radius: 50%;
+        }
+        .modal-body p {
+            margin-bottom: 0;
+        }
+        .carousel-inner img {
+            height: 300px;
+            object-fit: cover;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+        .btn-secondary {
+            background-color: #6c757d;
+            border-color: #6c757d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p class="resume-title text-center">RESUME</p>
+        <div class="table-responsive">
+            <table class="table table-bordered">
+                <tr>
+                    <th class="text-center">Profile Photo:</th>
+                    <td class="text-center">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALMAAACUCAMAAADvY+hPAAAAY1BMVEX///8AAAD7+/uFhYXk5OQEBATv7+/19fWPj48fHx9MTEzg4OD4+PiTk5OcnJx1dXXS0tI0NDTGxsYtLS1kZGQoKCinp6exsbFSUlK5ubkUFBR9fX2/v79CQkJubm49PT1bW1sUXS63AAAEwElEQVR4nO2biXKjMAyGgzHmCmc4Qi54/6dcsHDSdAGHwNjujL7ZdraBSf/IsiRk9XBAEARBEARBEARBEARBEARBdoCFaZ6Grm4Zn+KG1dkSnOM/IJw2hfVO0VDdohYgh8MPE7/oKqJb2jxh1yt0plSHuqXNUU+oFdS6xU3jPQU658T2Is9Ozhf4ube9p1veFJFwi1Oc0yN/6Ujz+DRIHi5EmvVNEAsjR+ztdRaJC7EmZbPUo5WLIbC9wsTwP1qM1wzz6bAcjTyVQcDUjlWaFT0KsOSw0aZisQdOXaiWtUQOVr4eZ64fr/CZcqWqlgkgS7OZy+TAhoVwrECpqkVu/iDZX7Ji7g8e7d+UaZJhczMni/ck/B7blMojBNdYLt8oD3iBKaHjxiXfJXfd+TY0ZRdWXI0sY0AFVSlRJKUPZAOyVQ/BoefCoVpcXueXc4FOwHiqPJvxqMVOPDjLxLj8oesk+2hqYDw6P6SaHzyIm6Q5kWrmEfpiiOZyhZ2lbq8Gdh/EBNI9yDPP3QzNsLksqWbro62qBgIPr6nktpTf5RlScDSQLSR3QSHVKFEkJ+UB2pLcxWukk2w1VAERoS84lta95kXJw4wteIA+gbMcOSBqGNTkoC1f+KVWEezT1qAWacTbW5dm1juaC18Kc8zcezR0XbK5HZZm/LpjRnAegXBnZeFkfyPMuJWNCXTAWPdb/pSsxpe0PzRBO+hvWfbv55VwSCaDu3d0MRhqgK8/jw3xT69O49Z6+Y1REDI0A0aDZl2cMnIgLI277HlYYZyVB8a0MUGv+mxMAnyHec7kCVAv2jNUcu8hefD73IofSwS5gW7xhNX+f0b2a2ONLEgf9/Kpt7w/TKk+l3HTKrIHoio33sQCwmia53lK/4hiWidBm2WnsixPWXsPktqg+vN/jvT2e6gAKG7UsFJjhDV2+VusI775dmOen7Bq2sQ/jF25ZmXvOhP5YyIJipczgw5iSdr+1Oi3QVcktmcnRRe0bzkmMyUhUvsCTjt8tdf4Fr5cl4W3+Nq+DH7xjIgiafDabo9mYmTKDW+P15Y8G5AXK184bG/DuZUn1Ls8XUf3MZBriz2WSU53jjaU/8Pjl9YA4l654v7fVb7k6VWY+qqxZ9BLBitf8k/y3DEXDnLVlmBcYbjHp8GAisSTuHq8g9hjtIg+LyaOYjpJy2E9gakpZ+1xcDVGPS0TVflo5VWSiRCt4bSeHMI7bL/10XYUfVfeo4ETyu+a4LGmiNeAZyTf1PJk/LyK26QEyvsvT1XhtNny1caOcZ7123onhdihdO4V+onfxysCLu2oLEw97szB97+SBvwdFBq6j3Prk8k7lep4B+eB7ab3aLd511oYjO1vC1U1f49OVYEHEwL+tjbL0d8UedYS8/2zdVkjpc4BYwRbtw/M25W7KJICAy+bJwTYZ+M1+1DvVP9C9FHTW+IVjrO9wGn402+i5Bk8G7PB1t8FI8iZCs0uL+l2mN+CebFSRRUdwtjiDu/EncxXkb6hSSGb8voEPgl2UfFcCNVNRDcz/lWTivbd8w+rdkJFJozkMlahYkbJk8tYhYq6/y9qtnfWvEcEktHY+6Kky0H2RoVoBEEQBEEQBEEQBEEQBPkL/AMGFyys8IEMRAAAAABJRU5ErkJggg==" alt="Profile Photo">
+                    </td>
+                </tr>
+                <tr>
+                    <th>Personal Info:</th>
+                    <td>
+                        Name: Mihika Milind Sarwate<br>
+                        DOB: 18/12/2005
+                    </td>
+                </tr>
+                <tr>
+                    <th>About me:</th>
+                    <td>
+                        As a first-year student pursuing a B.Tech in Computer Engineering,<br>
+                        I am highly tech-savvy, adaptable, and a quick learner,<br> 
+                        enabling me to swiftly tackle complex challenges<br> 
+                        and innovate solutions within the ever-evolving landscape of technology.
+                    </td>
+                </tr>
+                <tr>
+                    <th>Education:</th>
+                    <td>
+                        X(ICSE) Universal High, Mumbai  - 95%<br>
+                        XII(CBSE) Narayana, Mumbai - 85%<br>
+                        NMIMS, Mumbai - B.Tech Computer Engineering, in progress.
+                    </td>
+                </tr>
+                <tr>
+                    <th>Coding Skills:</th>
+                    <td>
+                        Java<br>
+                        Python<br>
+                        C++<br>
+                        HTML, CSS<br>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Other Skills:</th>
+                    <td>
+                        Karate<br>
+                        Abacus<br>
+                        Dance<br>
+                        Swimming
+                    </td>
+                </tr>
+                <tr>
+                    <th>Projects:</th>
+                    <td>
+                        <div class="accordion" id="projectsAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Track Following Car
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#projectsAccordion">
+                                    <div class="accordion-body">
+                                        A car that follows a predefined track using sensors.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Gesture Controlled Robot
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#projectsAccordion">
+                                    <div class="accordion-body">
+                                        A robot controlled by hand gestures using a sensor glove.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        Smoke Sensor Alarm System
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#projectsAccordion">
+                                    <div class="accordion-body">
+                                        An alarm system that triggers when smoke is detected.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Languages:</th>
+                    <td>
+                        English<br>
+                        Marathi<br>
+                        Hindi
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Carousel -->
+        <div id="carouselExampleControls" class="carousel slide mb-5" data-bs-ride="carousel">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- Modal button -->
+        <div class="text-center">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactModal">
+                Contact Me
+            </button>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="contactModalLabel">Contact Information</h5>
+                    </div>
+                    <div class="modal-body">
+                        <p>Email: mihika@example.com</p>
+                        <p>Phone: +91 1234567890</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Tooltip button -->
+        <div class="text-center mt-3">
+            <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="View my projects">
+                Projects
+            </button>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+    <script>
+        // Initialize tooltips
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
+</body>
+</html>
